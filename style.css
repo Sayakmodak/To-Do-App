@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #8484c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card{
+    border: 1px solid black;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.nameIcon{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.nameIcon img{
+    width: 30px;
+    margin-left: 10px;
+}
+.inputButton {
+    /* border: 1px solid black; */
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 23px;
+}
+.inputButton input{
+    /* width: 85%; */
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 1rem;
+}
+.inputButton #addButton, #deleteButton{
+    border: none;
+    border-radius: 10px;
+    padding: 7px 15px;
+    background-color: #cb6919;
+    color: white;
+    cursor: pointer;
+}
+.task-container{
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 10px;
+}
+.task-container ul{
+    list-style: none;
+}
+ul li{
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    font-size: 1.1rem;
+    cursor: pointer;
+    /* width: 85%; */
+    /* border: 1px solid red; */
+}
+ul li::before{
+    content: '';
+    background-image: url(Images/unchecked.png);
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked{
+    /* border: 1px solid red; */
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Images/checked.png);
+}
+span{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 29px;
+    height: 29px;
+    border: 1px solid #dad4d4;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    background-color: #eee5e5;
+    color: #000000;
+}
+span:hover{
+    background-color: #f0f1f0;
+}
+
