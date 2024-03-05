@@ -15,11 +15,14 @@ https://ibb.co/zQ771bQ
 
 
 
+## Tech Stack
+
+**Client:** HTML, CSS, JavaScript
+
+
+
 ## Authors
 
 - [@sayakmodak](https://www.github.com/https:/Sayakmodak)
 
 
-## Tech Stack
-
-**Client:** HTML, CSS, JavaScript
